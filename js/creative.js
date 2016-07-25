@@ -61,4 +61,8 @@
         }
     });
 
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+
 })(jQuery); // End of use strict

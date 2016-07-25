@@ -7,6 +7,10 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var wiredep = require('wiredep').stream;
+var angularFilesort = require('gulp-angular-filesort');
+var es = require('event-stream');
+var inject = require('gulp-inject');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -16,6 +20,21 @@ var banner = ['/*!\n',
     ' */\n',
     ''
 ].join('');
+
+gulp.task('inject', function () {
+    return gulp.src('./index.html')
+        .pipe(inject(es.merge(
+            gulp.src(['./css/**/*.css', '!./css/**/*.min.css'], { read: false }),
+            gulp.src(['./js/**/*.js', '!./js/**/*.min.js']).pipe(angularFilesort())
+        ), { relative: true }))
+        .pipe(gulp.dest('./'));
+});
+
+gulp.task('wiredep', function () {
+    return stream = gulp.src('./index.html')
+        .pipe(wiredep())
+        .pipe(gulp.dest('./'));
+});
 
 // Default task
 gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
@@ -111,4 +130,5 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
+    gulp.watch('css/**/*.css', browserSync.reload);
 });

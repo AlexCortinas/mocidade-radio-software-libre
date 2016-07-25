@@ -22,7 +22,8 @@ hr.light {
     border-color: white;
 }
 
-a {
+.a, a {
+    cursor: pointer;
     .transition-all;
     color: @theme-primary;
     &:hover,
@@ -165,7 +166,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header2.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -359,3 +360,5 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @gray-darker;
 }
+
+@import "mine.less";
