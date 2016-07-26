@@ -427,3 +427,30 @@ hr.dark {
 .popover-title {
   color: #333333;
 }
+.actividade .titulo {
+  font-variant: small-caps;
+  color: #5e2519;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.actividade .descricion,
+.actividade .descricion p {
+  margin-top: 2px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.actividade .descricion {
+  margin-bottom: 20px;
+}
+.actividade li {
+  margin-bottom: 3px;
+}
+.fa-8x {
+  font-size: 8em;
+}
+.fa-16x {
+  font-size: 16em;
+}
+.fa-20x {
+  font-size: 20em;
+}
