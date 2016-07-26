@@ -454,3 +454,9 @@ hr.dark {
 .fa-20x {
   font-size: 20em;
 }
+section#organizadoras {
+  padding-bottom: 0px;
+}
+aside#contacto {
+  padding-top: 20px;
+}
