@@ -1,0 +1,40 @@
+.navbar-nav > li > a.facebook {
+    padding: 11px;
+}
+
+.navbar-default .fa-facebook {
+    color: #dfe3ee;
+}
+
+.navbar-default.affix .fa-facebook {
+    color: #3b5998;
+}
+
+.well p {
+    margin-bottom: 0px;
+}
+
+.carta-participante {
+    /*height: 483px;*/
+    min-height: 330px;
+    vertical-align: middle;
+}
+
+.carta-participante div {
+    margin: auto;
+}
+
+.carta-participante img {
+    height: 277px;
+    width: 277px;
+}
+
+.bg-active {
+    background-color: #eb3812;
+    color: white
+}
+
+.well {
+    border-color: #ddd;
+    background-color: #fff;
+}

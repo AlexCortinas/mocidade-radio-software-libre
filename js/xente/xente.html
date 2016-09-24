@@ -1,0 +1,487 @@
+<section id="xente" aria-multiselectable="false">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Participantes no obradoiro</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="panel-group">
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <a ng-click="$ctrl.selected = item" ng-repeat="item in $ctrl.aXente">
+                            <div class="panel-heading" ng-class="{'bg-active': $ctrl.selected == item}">
+                                <h4 class="panel-title">
+                                    {{item.nome}}
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a ng-href="{{$ctrl.selected.url}}" ng-if="$ctrl.selected.imaxe != null">
+                                <img ng-src="img/xente/{{$ctrl.selected.imaxe}}" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p ng-bind-html="$ctrl.selected.texto">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="xente" aria-multiselectable="false">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Participantes no obradoiro</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div id="aXente" class="container">
+        <div class="row">
+            <div class="panel-group">
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#iago-veloso" data-parent="#aXente">
+                                    Iago Veloso
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#jorge-lama" data-parent="#aXente">
+                                    Jorge Lama
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#chema-casanova" data-parent="#aXente">
+                                    Chema Casanova
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#alex-cortinas" data-parent="#aXente">
+                                    Álex Cortiñas
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#isabel-lema" data-parent="#aXente">
+                                    Isabel Lema
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#kalimera" data-parent="#aXente">
+                                    Adriana Pérez e Natalia Veiga
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#agus-hernan" data-parent="#aXente">
+                                    Agus Hernán
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#miguel-midoes" data-parent="#aXente">
+                                    Miguel Midoes
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#javi-garcia" data-parent="#aXente">
+                                    Javi García
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#alejandro-blanco" data-parent="#aXente">
+                                    Alejandro Blanco
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#fabio-ribeiro" data-parent="#aXente">
+                                    Fábio Ribeiro
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#mariano-fernandez" data-parent="#aXente">
+                                    Mariano Fernández
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="toggle" role="button" data-target="#noemi-giraldez" data-parent="#aXente">
+                                    Noemí Giráldez
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Enxeñeiro informático. Creador de RadioCo, sistema de xestión de parrillas e gravación para radios comunitarias. RadioCo distribúese como software libre, o que permite usar o programa, compartirlo, ver o código fonte e modificalo para adaptalo ás vosas necesidades. Radioco está instalado e en pleno funcionamento en dúas emisoras europeas: CUAC FM (A Coruña, España) e Radio CORAX (Halle, Alemaña). Iago Veloso foi premiado, polo seu proxecto, no Concurso de Proxectos Tecnológicos, no Certamen de aplicaciones libre Chuza e na VII edición del Premio al mejor PFC con licencia libre.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="jorge-lama" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <div>
+                                <a href="https://twitter.com/iago1460">
+                                    <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                                </a>
+                                <p>
+                                    Informático e socio de MELISA, a Asociación de usuarios de software libre da Terra de Melide cuxo fin é a promoción dos proxectos de Software Libre e a adaptación do Software Libre á lingua galega. Entre os seus proxectos máis destacados, Jorge Lama ven impartindo formación te, “Talleres tecnolóxicos e software libre nos cárceres de Galicia”. Jorge Lama é un dos formadores destes obradoiros, así como o impulsor da I Xornada de Radio Libre organizada en outubro de 2015 no IES de Melide.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                    <div id="iago-veloso" class="panel-collapse collapse in">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right; margin-left: 10px;">
+                            </a>
+                            <p>
+                                Texto
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="panel-group" id="xente" role="tablist">
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="head-iago-veloso">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-target="#iago-veloso" data-parent="#xente" aria-controls="iago-veloso" class="toggle">
+                                    Iago Veloso
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-heading" role="tab" id="head-jorge-lama">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-target="#jorge-lama" data-parent="#xente" aria-controls="jorge-lama" class="toggle">
+                                    Jorge Lama
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="iago-veloso" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="head-iago-veloso">
+                        <div class="well carta-participante">
+                            <a href="https://twitter.com/iago1460">
+                                <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="" style="float: right;">
+                            </a>
+                            <p>
+                                Enxeñeiro informático. Creador de RadioCo, sistema de xestión de parrillas e gravación para radios comunitarias. RadioCo distribúese como software libre, o que permite usar o programa, compartirlo, ver o código fonte e modificalo para adaptalo ás vosas
+                                necesidades. Radioco está instalado e en pleno funcionamento en dúas emisoras europeas: CUAC FM (A Coruña, España) e Radio CORAX (Halle, Alemaña). Iago Veloso foi premiado, polo seu proxecto, no Concurso de Proxectos
+                                Tecnológicos, no Certamen de aplicaciones libre Chuza e na VII edición del Premio al mejor PFC con licencia libre.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="jorge-lama" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="head-jorge-lama">
+                        <div class="well carta-participante">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                            craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3><a href="https://twitter.com/iago1460">Iago Veloso</a></h3>
+                    <p class="text-muted">
+                        Creador de <a href="http://radioco.org/about/">RadioCo</a>, sistema de xestión de parrillas e gravación para radios comunitarias.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/raivenra">
+                        <img src="img/xente/jorge-lama.jpeg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3><a href="https://twitter.com/raivenra">Jorge Lama</a></h3>
+                    <p class="text-muted">
+                        Representante de <a href="http://webmelisa.es/">MELISA</a>, a Asociación de usuarios de software libre da Terra de Melide.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/txenoo">
+                        <img src="img/xente/chema-casanova.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3><a href="https://twitter.com/txenoo">Chema Casanova</a></h3>
+                    <p class="text-muted">Representante de GPUL e socio de CUAC FM.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Adriana Pérez</h3>
+                    <p class="text-muted">
+                        Representante da Kalimera, radio comunitaria de Santiago.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/miguel-midoes.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Miguel Midoes</h3>
+                    <p class="text-muted">
+                        Representante de Radio Manobras, radio comunitaria de Porto.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Natalia...?</h3>
+                    <p class="text-muted">
+                        Representante da Kalimera, radio comunitaria de Santiago.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/agus-hernan.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Agus Hernán</h3>
+                    <p class="text-muted">
+                        Representante da Antxeta Irratia.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/javi-garcia.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Javi García</h3>
+                    <p class="text-muted">
+                        Representante da Radio Almenara, radio comunitaria de Madrid.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Fábio Ribeiro</h3>
+                    <p class="text-muted">
+                        Universidade do Minho.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Natalia...?</h3>
+                    <p class="text-muted">
+                        Representante da Kalimera, radio comunitaria de Santiago.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/agus-hernan.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Agus Hernán</h3>
+                    <p class="text-muted">
+                        Representante da Antxeta Irratia.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center">
+                <div class="service-box">
+                    <a href="https://twitter.com/iago1460">
+                        <img src="img/xente/iago-veloso.jpg" class="img-responsive img-rounded" alt="">
+                    </a>
+                    <h3>Javi García</h3>
+                    <p class="text-muted">
+                        Representante da Radio Almenara, radio comunitaria de Madrid.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</section>

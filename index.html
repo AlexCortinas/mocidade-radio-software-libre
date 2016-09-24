@@ -18,6 +18,7 @@
     <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="css/creative.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- endinject -->
 
     <!-- Custom Fonts -->
@@ -27,12 +28,12 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-app="app">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -68,6 +69,11 @@
                     <li>
                         <a class="page-scroll" href="#colaboradoras">Colaboradoras</a>
                     </li>
+                    <li>
+                        <a href="https://www.facebook.com/Radioslibressoftwarelibre" class="facebook">
+                            <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -79,6 +85,7 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">Construíndo redes para unha comunicación alternativa</h1>
+
                 <hr>
                 <!-- <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p> -->
                 <a href="#obradoiro" class="btn btn-primary btn-xl page-scroll">Queres saber máis?</a>
@@ -91,13 +98,16 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">De qué vai isto?</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                        Espazo de comunicación alternativa para a mocidade galega, no que buscamos promover e desenvolver novas tecnoloxías de Software Libre, así como establecer novas redes entre o texido asociativo galego. Tamén contamos coa presenza de expertos comunicadores de outras partes de España e mesmo de Portugal que nos proporcionan unha perspectiva distinta sobre a comunicación alternativa.
-                    </p>
-                    <p class="text-faded">
-                        O Obradoiro ten lugar nun espazo privilexiado, no medio das xornadas Escola de Verán de CUAC FM, a radio comunitaria da Coruña, nos días 16 e 17 de Xullo na <button class="btn btn-primary" data-placement="top" data-toggle="popover" title="Onde queda a Aula Náutica?" data-content="No dique de abrigo, polo paseo marítimo da Coruña. <a target='_blank' href='https://goo.gl/maps/BiF7FnYxKz22'>Aquí tes un mapa</a>" data-html="true">Aula Náutica</button> da UDC.
-                    </p>
+                    <video width="640" height="360" controls>
+                        <source src="img/video.mp4" type="video/mp4"/>
+                    </video>
+                    <hr class="light"></hr>
+                    <p class="text-faded">O obradoiro <strong>Mocidade, Radio e Sofware Libre “construíndo redes para una comunicación alternativa”</strong> quere se un espazo de interacción e aprendizaxe para a mocidade galega.</p>
+                    <p class="text-faded">Buscamos conectar dúas comunidades presentes na Galicia: a comunidade do software libre e a rede galega de medios libres e comunitarios, e crear sinerxias con outras redes estatais e europeas como a Rede de Medios (ReMC), a Asociación Mundial de Medios Comunitarios (Amarc) e as iniciativas de comunicación cidadá existentes en Portugal.</p>
+                    <p class="text-faded">Queremos ser un espazo de innovación social e tecnolóxica, desenvolvendo, de maneira colaborativa con outras redes e colectivos, proxectos de comunicación social baseados en tecnoloxías abertas.</p>
+                    <p class="text-faded"><strong>Onde?</strong> Na <button class="btn btn-primary" data-placement="top" data-toggle="popover" title="Onde queda a Aula Náutica?" data-content="No dique de abrigo, polo paseo marítimo da Coruña. <a target='_blank' href='https://goo.gl/maps/BiF7FnYxKz22'>Aquí tes un mapa</a>" data-html="true">Aula Náutica</button> da UDC.</p>
+                    <p class="text-faded"><strong>Cándo?</strong> Os días 16 e 17 de Xullo.</p>
+                    <p class="text-faded"><strong>Para quen?</strong> A participación é gratuíta e está aberta a calquera persoa interesada no mundo da comunicación social e as tecnoloxías libres.</p>
                     <a href="#programa" class="page-scroll btn btn-default btn-xl sr-button">Programa</a>
                 </div>
             </div>
@@ -109,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Programa de actividades</h2>
-                    <hr class="dark">
+                    <hr class="dark"></hr>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="text-center">
@@ -117,13 +127,16 @@
                     </div>
                     <div class="actividade">
                         <div class="titulo">
-                            18:00 - Panel "Ferramentas e proxectos de Software Libre para a innovación na comunicación dixital"
+                            18:00 - Panel <strong>"Ferramentas e proxectos de Software Libre para a innovación na comunicación dixital"</strong>
                         </div>
                         <div class="descricion">
+                            <p>
+                                Dinamizan: Álex Cortiñas e Antonio Fra.
+                            </p>
                             <ul>
-                                <li><strong>Iago Veloso (RadioCo).</strong> Programa de gravación automatizada de programas e xeración de podcasts para radios.</li>
-                                <li><strong>Chema Casanova (GPUL).</strong> Software Libre nunha emiosora comunitaria (streaming, compartir arquitvos, descargar podcasts, poñer música e editar son).</li>
-                                <li><strong>Jorge Lama (MELISA).</strong> Ferramentas libres para editar e gravar o teu programa e como crear un podcast.</li>
+                                <li><strong>Iago Veloso (<a href="https://github.com/iago1460/django-radio">RadioCo</a>).</strong> Programa de gravación automatizada de programas e xeración de podcasts para radios.</li>
+                                <li><strong>Chema Casanova (<a href="https://www.gpul.org/">GPUL</a>).</strong> Software Libre nunha emisora comunitaria (programas máis habituais para a retransmisión por streaming, compartición de arquitvos, descarga de podcasts e edición de son).</li>
+                                <li><strong>Jorge Lama (<a href="http://webmelisa.es/">MELISA</a>).</strong> Ferramentas libres dispoñibles para un colectivo social. Programas para gravación de son e creación de podcasts.</li>
                             </ul>
                         </div>
                     </div>
@@ -133,7 +146,10 @@
                         </div>
                         <div class="descricion">
                             <p>
-                                Dinamizan: GPUL, MELISA, CUAC FM. Espazo de innovación e traballo colaborativo no que os participantes desenvolverán proxectos baseados en hardware (ferramentas low cost e tecnoloxías libres como Raspberry Pi 2, U-Control UCA 222) e software libre (python, icecast, DarkIce, VLC).
+                                Dinamizan: Chema Casanova (GPUL), Jorge Lama (MELISA), Alex Cortiñas e Iago Veloso (Radioco).
+                            </p>
+                            <p>
+                                Espazo de innovación e traballo colaborativo no que os participantes desenvolverán proxectos baseados en hardware (ferramentas low cost e tecnoloxías libres como Raspberry Pi 2, U-Control UCA 222) e software libre (python, icecast, DarkIce, VLC).
                             </p>
                             <p>
                                 Proxectos a desenvolver (propostas a discutir):
@@ -158,11 +174,14 @@
                             11:00 - Panel "Construíndo redes para unha comunicación alternativa"
                         </div>
                         <div class="descricion">
+                            <p>
+                                Dinamiza: Isabel Lema. Consello asesor de <a href="http://www.amarceurope.eu/">AMARC-Europa</a> (Asociación Mundial de Radios Comunitarias).
+                            </p>
                             <ul>
-                                <li><strong>Noemí Giráldez.</strong> FEDELLO. Revolucionando as ondas ourensás dende a universidade (Ourense).</li>
-                                <li><strong>Adriana Pérez e Natalia.</strong> A Kalimera. Trinta anos de emisión libre en Compostela.</li>
-                                <li><strong>Miguel Midoes.</strong> As radios comunitarias voltan á andar: O caso de Radio Manobras (Porto).</li>
-                                <li><strong>Mariano Fernández.</strong> CUAC FM. Facendo radio comunitaria dende 1996 (A Coruña).</li>
+                                <li><strong>Adriana Pérez e Natalia.</strong> <a href="http://akalimera.org/">A Kalimera</a>. Trinta anos de emisión libre en Compostela.</li>
+                                <li><strong>Miguel Midoes.</strong> As radios comunitarias comezan á andar: a experiencia de <a href="http://radiomanobras.pt/">Radio Manobras</a> (Oporto, Portugal).</li>
+                                <li><strong>Mariano Fernández.</strong> <a href="https://cuacfm.org/">CUAC FM</a>. Facendo radio comunitaria dende 1996 (A Coruña).</li>
+                                <li><strong>Noemí Giráldez.</strong> <a href="https://www.facebook.com/radiofedello/">Radio Fedello</a> (Ourense).</li>
                             </ul>
                         </div>
                     </div>
@@ -171,12 +190,15 @@
                             12:00 - Coloquio: "As redes de medios libres e comunitarios. Para que serven e cómo se organizan?"
                         </div>
                         <div class="descricion">
+                            <p>
+                                Dinamiza: Isabel Lema. Consello asesor de <a href="http://www.amarceurope.eu/">AMARC-Europa</a> (Asociación Mundial de Radios Comunitarias).
+                            </p>
                             <ul>
-                                <li><strong>Agus Hernán.</strong> Sindicato de Radios Libres Francés. A participación dos medios comunitarios dentro do sector da comunicación: unha perspectiva europea.</li>
-                                <li><strong>Alejandro Blanco.</strong> Onda Color Málaga. O traballo de EMA-RTV (Asociación de Emisoras Municipales de Andalucía de Radio y Televisión) na redacción da nova lei andaluza de comunicación.</li>
+                                <li><strong>Agus Hernán.</strong> Antxeta Irratia (Hendaya/Irún). O traballo en rede: unha oportunidade para os medios alternativos. O caso da rede ARROSA e do Sindicato Nacional de Radios Libres francés.</li>
+                                <li><strong>Alejandro Blanco.</strong>Onda Color (Málaga). O <a href="http://www.comunicacionyciudadania.org/">Foro andaluz de educación, comunicación y ciudadanía</a>, un espazo de empoderamento e educación mediática.</li>
                                 <li><strong>Javier García.</strong> Rede de Medios Comunitarios (ReMC). O traballo da Rede en defensa dos dereitos fundamentais de liberdade de expresión e comunicación.</li>
                                 <li><strong>Fábio Ribeiro.</strong> Ideas para un observatorio de medios comunitarios: eventos recentes a nivel internacional e o silencio de Portugal.</li>
-                                <li><strong>Mariano Fernández.</strong> REGARLIC. O posicionamento das institucións ante as emisoras libres e comunitarias galegas.</li>
+                                <li><strong>Mariano Fernández</strong> e <strong>Adriana Pérez.</strong> <a href="https://www.facebook.com/ReGaRLiC.Galiza/">REGARLIC</a>. O posicionamento das institucións ante as emisoras libres e comunitarias galegas.</li>
                             </ul>
                         </div>
                     </div>
@@ -185,7 +207,12 @@
                             13.00 - Obradoiro "Como defender o dereito a comunicar? Artellando un recoñecemento legal para os medios comunitarios"
                         </div>
                         <div class="descricion">
-                            Coa participación de todos/as participantes.
+                            <p>
+                                Dinamiza: Javier García. Rede de Medios Comunitarios (ReMC).
+                            </p>
+                            <p>
+                                Coa participación de todos/as participantes.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -197,14 +224,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-heading">Inscríbete!</h2>
+                    <h2 class="section-heading text-primary">Inscríbete!</h2>
                 </div>
                 <div class="col-lg-8">
                     <p>
                         A inscrición no Obradoiro “Construíndo redes para unha comunicación alternativa” é gratuita e está aberta a calquera persona interesada. Non é preciso ser socio de ningunha asociación, simplemente ter interese nas actividades propostas.
                     </p>
                     <p>
-                        Para participar só tes que enviar un email cos teus datos persoais (nome, apelidos, idade, email e número de teléfono) ao correo electrónico: <span class="a">mail[[arroba]]alexcortinas.es</span>. Tamén podes incribirte na páxina da <a href="https://cuacfm.org/escuela-verano-cuacfm-2016/">Escola de Verán</a> de CUAC FM! Recorda que se só queres acceder a esta actividade, non tes que pagar nada.
+                        Para participar só tes que enviar un email cos teus datos persoais (nome, apelidos, idade, email e número de teléfono) ao correo electrónico: <span class="a">mail[[arroba]]alexcortinas.es</span>.
                     </p>
                     <p>
                         En caso de haber máis solicitudes que prazas, outorgase prioridade aos mozos e mozas menores de 35 anos, por ser o colectivo prioritario do obradoiro. O número máximo de participantes será 50 persoas.
@@ -217,169 +244,7 @@
         </div>
     </aside>
 
-
-    <section id="xente">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Participantes no obradoiro</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <!-- <i class="fa fa-4x fa-diamond text-primary sr-icons"></i> -->
-                        <h3><a href="https://twitter.com/iago1460">Iago Veloso</a></h3>
-                        <p class="text-muted">
-                            Creador de <a href="http://radioco.org/about/">RadioCo</a>,
-                            sistema de xestión de parrillas e gravación para radios comunitarias.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/jorge-lama.jpeg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <!-- <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i> -->
-                        <h3><a href="https://twitter.com/raivenra">Jorge Lama</a></h3>
-                        <p class="text-muted">
-                            Representante de <a href="http://webmelisa.es/">MELISA</a>, a Asociación de usuarios de software libre da Terra de Melide.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/chema.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <!-- <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i> -->
-                        <h3><a href="https://twitter.com/txenoo">Chema Casanova</a></h3>
-                        <p class="text-muted">Representante de GPUL e socio de CUAC FM.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Adriana Pérez</h3>
-                        <p class="text-muted">
-                            Representante da Kalimera, radio comunitaria de Santiago.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Miguel Midoes</h3>
-                        <p class="text-muted">
-                            Representante de Radio Manobras, radio comunitaria de Porto.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Natalia...?</h3>
-                        <p class="text-muted">
-                            Representante da Kalimera, radio comunitaria de Santiago.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Agus Hernán</h3>
-                        <p class="text-muted">
-                            Representante da Antxeta Irratia.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Javi García</h3>
-                        <p class="text-muted">
-                            Representante da Radio Almenara, radio comunitaria de Madrid.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Fábio Ribeiro</h3>
-                        <p class="text-muted">
-                            Universidade do Minho.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Natalia...?</h3>
-                        <p class="text-muted">
-                            Representante da Kalimera, radio comunitaria de Santiago.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Agus Hernán</h3>
-                        <p class="text-muted">
-                            Representante da Antxeta Irratia.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <div class="service-box">
-                        <a href="https://twitter.com/iago1460">
-                            <img src="img/xente/iago-veloso.jpg"
-                                class="img-responsive img-rounded" alt="">
-                        </a>
-                        <h3>Javi García</h3>
-                        <p class="text-muted">
-                            Representante da Radio Almenara, radio comunitaria de Madrid.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <xente></xente>
 
     <section class="no-padding" id="galeria">
         <div class="container-fluid">
@@ -524,88 +389,118 @@
     </section>
 
     <!-- <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+    <div class="container text-center">
+    <div class="call-to-action">
+    <h2>Free Download at Start Bootstrap!</h2>
+    <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+</div>
+</div>
+</aside> -->
+
+<section id="organizadoras">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Organizadoras</h2>
+                <hr class="primary" />
+                <p>
+                    Grupo Informal "Mocidade, Radio e Software Libre"
+                </p>
             </div>
         </div>
-    </aside> -->
+    </div>
+</section>
 
-    <section id="organizadoras">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Organizadoras</h2>
-                    <hr class="primary"/>
-                    <p>
-                        Grupo Informal "Mocidade, Radio e Software Libre"
-                    </p>
-                </div>
+<aside id="contacto" class="bg-dark">
+    <div class="container text-center">
+        <div class="row">
+            <h3 class="text-primary">Contacto</h3>
+            <p>Para calquera consulta, non dubidedes en poñervos en contacto connosco a través do seguinte email!</p>
+            <div class="col-lg-4 col-lg-offset-4 text-center">
+                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                <p class="a">mail[[arroba]]alexcortinas.es</p>
             </div>
         </div>
-    </section>
+    </div>
+</aside>
 
-    <aside id="contacto" class="bg-dark">
-        <div class="container text-center">
-            <div class="row">
-                <h3 class="text-primary">Contacto</h3>
-                <p>Para calquera consulta, non dubidedes en poñervos en contacto connosco a través do seguinte email!</p>
-                <div class="col-lg-4 col-lg-offset-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p class="a">mail[[arroba]]alexcortinas.es</p>
-                </div>
+<section id="colaboradoras">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Entidades colaboradoras</h2>
+                <hr class="primary" />
+                <!-- <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
             </div>
-        </div>
-    </aside>
 
-    <section id="colaboradoras">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Entidades colaboradoras</h2>
-                    <hr class="primary"/>
-                    <!-- <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
-                </div>
+            <div class="col-sm-3 text-center">
+                <a href="https://cuacfm.org/"><img src="img/agradecementos/cuac.png" class="img-responsive center-block" alt="" width="150px" style="margin-bottom: 25px;"></a>
+                <p>CUAC FM</p>
+            </div>
+            <div class="col-sm-3 text-center">
+                <a href="https://www.gpul.org/"><img src="img/agradecementos/gpul.png" class="img-responsive center-block" alt="" width="150px" style="margin-bottom: 25px;"></a>
+                <p>GPUL</p>
+                <!-- <p>A <a href="https://cuacfm.org/">CUAC FM</a>, radio comunitaria da Coruña, por deixarnos facer o obradoiro no marco da súa Escola de verán</p> -->
+            </div>
+            <div class="col-sm-3 text-center">
+                <a href="http://webmelisa.es/"><img src="img/agradecementos/melisa.png" class="img-responsive center-block" alt="" width="132.5px" style="margin-bottom: 25px;"></a>
+                <p>MELISA</p>
+            </div>
+            <div class="col-sm-3 text-center">
+                <a href="http://akalimera.org/"><img src="img/agradecementos/kalimera.png" class="img-responsive center-block" alt="" width="96.3px" style="margin-bottom: 25px;"></a>
+                <p>A KALIMERA</p>
+            </div>
 
-                <div class="col-sm-4 col-sm-offset-1 text-center">
-                    <img src="img/agradecementos/xuventude.png" class="img-responsive center-block" alt="">
-                    <p>O programa de axudas <a href="http://xuventude.xunta.es/iniciativa-xove.html">Iniciativa Xove</a>, polo apoio económico proporcionado</p>
-                </div>
-                <div class="col-sm-4 col-sm-offset-2 text-center">
-                    <img src="img/agradecementos/cuac.png" class="img-responsive center-block" alt="" width="150px" style="margin-bottom: 25px;">
-                    <p>A <a href="https://cuacfm.org/">CUAC FM</a>, radio comunitaria da Coruña, por deixarnos facer o obradoiro no marco da súa Escola de verán</p>
-                </div>
+
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Entidades patrocinadoras</h2>
+                <hr class="primary" />
+            </div>
+
+            <div class="col-sm-4 col-sm-offset-1 text-center">
+                <a href="http://xuventude.xunta.es/iniciativa-xove.html"><img src="img/agradecementos/xuventude.png" class="img-responsive center-block" alt="" width="150px" style="margin-bottom: 25px;"></a>
+                <p>Xuventude.net</p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2 text-center">
+                <a href="http://xuventude.xunta.es/iniciativa-xove.html"><img src="img/agradecementos/xunta.png" class="img-responsive center-block" alt="" width="240px" style="margin-bottom: 25px;"></a>
+                <p>Xunta de Galicia</p>
+            </div>
             <!-- </div> -->
             <!-- <div class="row"> -->
 
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <hr class="dark"/>
-                </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <hr class="dark" />
+            </div>
 
-                <div class="col-sm-3 text-center">
-                    <p>Foto da cabeceira por <a href="https://www.flickr.com/photos/coyotecreek/">Kevin Schraer</a>, con licenza <a href="https://creativecommons.org/licenses/by-nc/2.0/">Creative Commons</a></p>
-                </div>
-                <div class="col-sm-4 col-sm-offset-1 text-center">
-                    <p>Plantilla da web por <a href="http://startbootstrap.com/template-overviews/creative/">Start Bootstrap - Creative</a>, con licenza <a href="https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE">MIT</a></p>
-                </div>
-                <div class="col-sm-3 col-sm-offset-1 text-center">
-                    <p>Grazas aos participantes polas fotos! Moitas delas son de <a href="https://twitter.com/raivenra">Jorge Lama</a>, <a href="https://twitter.com/rogilce">Rodri Gil</a> e <a href="https://twitter.com/sabelabranco">Isa Lema</a>.</p>
-                </div>
+            <div class="col-sm-3 text-center">
+                <p>Foto da cabeceira por <a href="https://www.flickr.com/photos/coyotecreek/">Kevin Schraer</a>, con licenza <a href="https://creativecommons.org/licenses/by-nc/2.0/">Creative Commons</a></p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-1 text-center">
+                <p>Plantilla da web por <a href="http://startbootstrap.com/template-overviews/creative/">Start Bootstrap - Creative</a>, con licenza <a href="https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE">MIT</a></p>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1 text-center">
+                <p>Grazas aos participantes polas fotos! Moitas delas son de <a href="https://twitter.com/raivenra">Jorge Lama</a>, <a href="https://twitter.com/rogilce">Rodri Gil</a> e <a href="https://twitter.com/sabelabranco">Isa Lema</a>.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
-    <script src="bower_components/scrollreveal/dist/scrollreveal.js"></script>
-    <script src="bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- endbower -->
-    <!-- inject:js -->
-    <script src="js/creative.js"></script>
-    <!-- endinject -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+<script src="bower_components/scrollreveal/dist/scrollreveal.js"></script>
+<script src="bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+<!-- endbower -->
+<!-- inject:js -->
+<script src="js/app.module.js"></script>
+<script src="js/xente/xente.component.js"></script>
+<script src="js/creative.js"></script>
+<!-- endinject -->
 </body>
 
 </html>
